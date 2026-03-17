@@ -1,0 +1,393 @@
+/* 
+RESET BÁSICO
+Remove estilos padrão do navegador e facilita o controle
+de tamanhos usando box-sizing
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+ESTILO GLOBAL DO SITE
+Define fonte e cor de fundo da página
+ */
+body {
+  height: 100vh;
+  background-color: #10bbfa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+CABEÇALHO (HEADER)
+Contém foto de perfil e nome
+ */
+header {
+  padding: 20px;
+
+  /* Flexbox usado para organizar os elementos */
+  display: flex;
+  flex-direction: column; /* elementos um abaixo do outro */
+
+  align-items: center; /* centraliza horizontalmente */
+  justify-content: center;
+
+  gap: 15px; /* espaço entre imagem e título */
+
+  background-color: #418aa5;
+}
+
+/* imagem do perfil */
+header img {
+  width: 90px;
+  border-radius: 50%; /* deixa a imagem redonda */
+}
+
+/*TÍTULO DO CABEÇALHO*/
+header h1 {
+  color: #fff;
+}
+
+/* 
+MENU DE NAVEGAÇÃO
+ */
+.menu {
+  background-image: linear-gradient(#2fa5cf 70%, #10bbfa);
+  padding: 15px;
+}
+
+/* lista do menu */
+.menu ul {
+  display: flex;
+  justify-content: center; /* centraliza os botões */
+  gap: 30px; /* espaço entre os botões */
+}
+
+/* remove o marcador de lista */
+.menu li {
+  list-style: none;
+}
+
+/* estilo dos botões do menu */
+.menu a {
+  text-decoration: none;
+  background-color: #456c7a;
+  color: #fff;
+
+  padding: 10px 20px;
+
+  border-radius: 10px;
+
+  display: inline-block;
+
+  width: 140px;
+  text-align: center;
+}
+
+/* efeito quando passa o mouse */
+.menu a:hover {
+  background-color: #2f4f5a;
+  border: #fff solid 2px;
+  transform: scale(1.05); /* leve aumento do botão */
+}
+
+/* botão da página atual */
+.menu a.ativo {
+  background-color: #2f4f5a;
+  border: #fff solid 2px;
+}
+
+/* CONTEÚDO PRINCIPAL (MAIN) */
+main {
+  border: #418aa5 solid 2px;
+
+  margin: 20px auto; /* centraliza horizontalmente */
+
+  padding: 16px;
+
+  border-radius: 20px;
+
+  background-image: linear-gradient(#ffffffc2, #888888c2);
+
+  max-width: 900px; /* limita largura da página */
+
+  transition: 0.3s;
+}
+
+/* títulos principais */
+main h1 {
+  color: #2e3233;
+}
+
+/* subtítulos */
+main h2 {
+  margin-top: 20px;
+  color: #2e3233;
+}
+
+/* imagens dentro do conteúdo */
+main img {
+  width: 200px;
+
+  border-radius: 20px;
+
+  display: block;
+
+  margin: 0 auto 20px auto; /* centraliza imagem */
+}
+
+/* LISTAS */
+main ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+main li {
+  margin-bottom: 5px;
+}
+
+/* LINKS */
+main a {
+  color: #0a4b5f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/*
+PARÁGRAFOS
+Define espaçamento e legibilidade do texto
+ */
+p {
+  color: #191e20;
+  font-size: 18px;
+
+  margin-top: 15px;
+
+  line-height: 1.6; /* melhora leitura */
+}
+
+/* 
+GALERIA DO PROTÓTIPO (PORTFÓLIO)
+ */
+.galeria-prototipo {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap; /* quebra linha quando necessário */
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.galeria-prototipo img {
+  border-radius: 15px;
+}
+
+/* 
+IMAGENS DO PROJETO WEB
+ */
+.imgprojeto {
+  margin: 20px auto;
+
+  width: 830px;
+
+  border-radius: 20px;
+}
+
+/*
+BLOCOS DE PROJETO (PORTFÓLIO)
+*/
+.projeto {
+  margin-top: 25px;
+
+  padding: 15px;
+
+  border-radius: 15px;
+
+  background-color: #ffffffc9;
+}
+
+.projeto h2 {
+  margin-bottom: 10px;
+}
+
+.projeto a {
+  text-decoration: none;
+  color: #0a4b5f;
+  font-weight: bold;
+}
+
+.projeto a:hover {
+  text-decoration: underline;
+}
+
+/* 
+FORMULÁRIO DE CONTATO
+*/
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+
+  border-radius: 8px;
+
+  border: 1px solid #999;
+
+  font-size: 16px;
+}
+
+form button {
+  margin-top: 10px;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: #456c7a;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2f4f5a;
+}
+
+/* mensagem de status do formulário */
+#msg-status {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* 
+BOTÃO DE TROCA DE TEMA (DARK MODE)
+ */
+#tema-btn {
+  position: fixed;
+
+  top: 20px;
+  right: 20px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background-color: #456c7a;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+
+  transition: 0.2s;
+}
+
+/* efeito visual ao passar o mouse */
+#tema-btn:hover {
+  transform: scale(1.1);
+}
+
+/* tamanho dos ícones */
+#tema-btn img {
+  width: 22px;
+}
+
+/* inicialmente mostra apenas o ícone do sol */
+#icon-moon {
+  display: none;
+}
+
+/* 
+TEMA ESCURO (DARK MODE)
+Estilos aplicados quando o body recebe a classe "dark"
+*/
+
+/* fundo da página */
+body.dark {
+  background-color: #0f1720;
+}
+
+/* menu */
+body.dark nav {
+  background-image: linear-gradient(#2c2c2c, #0f1720);
+}
+
+/* área principal */
+body.dark main {
+  background-image: linear-gradient(#2c2c2c, #1b1b1b);
+  color: white;
+}
+
+/* seções internas */
+body.dark section {
+  background-image: linear-gradient(#2c2c2c, #1b1b1b);
+}
+
+/* textos */
+body.dark p {
+  color: #e0e0e0;
+}
+
+body.dark h1,
+body.dark h2 {
+  color: #e0e0e0;
+}
+
+/* botões do menu */
+body.dark .menu a {
+  background-color: #2f4f5a;
+}
+
+/* links */
+body.dark main a {
+  color: #6ed3ff;
+}
+
+body.dark main a:hover {
+  text-decoration: underline;
+}
+
+/* hover menu */
+body.dark .menu a:hover {
+  border: 2px solid #6ed3ff;
+}
+
+/* botão da página ativa */
+body.dark .menu a.ativo {
+  border: 2px solid #6ed3ff;
+}
+
+/* cabeçalho */
+body.dark header {
+  background-color: #1c3c4a;
+}

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página pessoal e portfólio." />
+    <title>Portfólio</title>
+
+    <!-- conecta o CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--Cabeçalho-->
+    <header id="cabecalho">
+      <img
+        src="img/img-perfil.png"
+        alt="Imagem de perfil de um homem de óculos"
+      />
+      <h1>@Éricles Marçal</h1>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html" class="ativo">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <!--Botão para troca de tema-->
+    <button id="tema-btn" onclick="trocarTema()">
+      <img src="img/sun.svg" id="icon-sun" alt="Tema claro" />
+      <img src="img/moon-stars.svg" id="icon-moon" alt="Tema escuro" />
+    </button>
+
+    <!-- CONTEÚDO -->
+    <main>
+      <h1>Portfólio</h1>
+
+      <p>
+        Nesta seção apresento alguns projetos e estudos que desenvolvi durante
+        meu aprendizado em programação e design. São trabalhos que mostram um
+        pouco das habilidades que venho desenvolvendo na área de tecnologia.
+      </p>
+
+      <section class="projeto">
+        <h2>Protótipo de aplicativo bancário (Figma)</h2>
+
+        <p>
+          Este projeto consiste em um protótipo de interface de um aplicativo de
+          banco digital desenvolvido no Figma. O objetivo foi praticar conceitos
+          de design de interface (UI), organização de telas e experiência do
+          usuário. O protótipo simula algumas telas de um aplicativo bancário
+          moderno.
+        </p>
+
+        <div class="galeria-prototipo">
+          <img src="img/imgprot-01.png" alt="Imagem prototipo figma 01" />
+          <img src="img/imgprot-02.png" alt="Imagem prototipo figma 02" />
+          <img src="img/imgprot-03.png" alt="Imagem prototipo figma 03" />
+          <img src="img/imgprot-04.png" alt="Imagem prototipo figma 04" />
+          <img src="img/imgprot-05.png" alt="Imagem prototipo figma 05" />
+          <img src="img/imgprot-06.png" alt="Imagem prototipo figma 06" />
+        </div>
+
+        <p>
+          <a
+            href="https://www.figma.com/proto/ax4oDB4DMZUHQGnp32crhx/Design-clone-banco-%C3%9Aati-?node-id=95-2&starting-point-node-id=4%3A5&t=dmjlp39WV2RpjTv7-1"
+            target="_blank"
+          >
+            Visualizar protótipo no Figma
+          </a>
+        </p>
+      </section>
+
+      <section class="projeto">
+        <h2>Projeto Web - Curso Rocketseat</h2>
+
+        <p>
+          Este projeto foi desenvolvido durante um curso de programação web da
+          Rocketseat. Nele pratiquei conceitos fundamentais de desenvolvimento
+          web utilizando HTML, CSS e JavaScript para construir uma página
+          funcional e interativa.
+        </p>
+
+        <img
+          src="img/projetoWeb-01.png"
+          alt="Imagem do projeto web 01"
+          class="imgprojeto"
+        />
+        <img
+          src="img/projetoWeb-02.png"
+          alt="Imagem do projeto web 02"
+          class="imgprojeto"
+        />
+
+        <p>
+          <a href="https://ericlesm.github.io/ProjetoRocket/" target="_blank">
+            Visualizar projeto
+          </a>
+        </p>
+      </section>
+    </main>
+    <!--conecta o JavaScript-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

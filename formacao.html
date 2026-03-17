@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página pessoal e portfólio." />
+    <title>Formação</title>
+
+    <!-- conecta o CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--Cabeçalho-->
+    <header id="cabecalho">
+      <img
+        src="img/img-perfil.png"
+        alt="Imagem de perfil de um homem de óculos"
+      />
+      <h1>@Éricles Marçal</h1>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Sobre mim</a></li>
+        <li><a href="formacao.html" class="ativo">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <!--Botão para troca de tema-->
+    <button id="tema-btn" onclick="trocarTema()">
+      <img src="img/sun.svg" id="icon-sun" alt="Tema claro" />
+      <img src="img/moon-stars.svg" id="icon-moon" alt="Tema escuro" />
+    </button>
+
+    <!-- CONTEÚDO -->
+    <main>
+      <img src="img/img-02.jpeg" alt="Imagem de perfil de um homem de óculos" />
+
+      <h1>Formação</h1>
+
+      <section>
+        <h2>Graduação</h2>
+
+        <p>
+          Atualmente estou cursando
+          <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong>. No
+          momento estou com aproximadamente
+          <strong>40% do curso concluído</strong>, onde venho desenvolvendo
+          conhecimentos em lógica de programação, desenvolvimento web e
+          fundamentos da área de tecnologia.
+        </p>
+      </section>
+
+      <section>
+        <h2>Cursos Complementares</h2>
+
+        <p>
+          Concluí um curso de <strong>Programação Web</strong> pela Rocketseat,
+          onde tive contato com conceitos fundamentais do desenvolvimento web,
+          incluindo HTML, CSS e JavaScript.
+        </p>
+
+        <p>
+          Certificado do curso:
+          <a
+            href="https://app.rocketseat.com.br/certificates/5b3bce4e-7915-4591-8816-520a9d4f44bc"
+            target="_blank"
+          >
+            Ver certificado
+          </a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Conhecimentos</h2>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Git e GitHub</li>
+          <li>Figma</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Idiomas</h2>
+
+        <p>
+          Inglês básico, atualmente busco melhorar minhas habilidades no idioma
+          para acompanhar conteúdos técnicos e documentação da área de
+          tecnologia.
+        </p>
+      </section>
+    </main>
+    <!--conecta o JavaScript-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
