@@ -43,7 +43,7 @@ Este projeto foi desenvolvido como parte dos meus estudos em Análise e Desenvol
 
 📷 Demonstração
 
-👉 Acesse o site: https://seu-link-aqui.com
+👉 Acesse o site: https://ericlesm.github.io/meu-site/
 
 📌 Status
 
