@@ -14,7 +14,7 @@ ESTILO GLOBAL DO SITE
 Define fonte e cor de fundo da página
  */
 body {
-  height: 100vh;
+  /*height: 100vh;*/
   background-color: #10bbfa;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -102,7 +102,7 @@ MENU DE NAVEGAÇÃO
 main {
   border: #418aa5 solid 2px;
 
-  margin: 20px auto; /* centraliza horizontalmente */
+  margin: 20px auto 60px; /* centraliza horizontalmente */
 
   padding: 16px;
 
@@ -327,6 +327,23 @@ BOTÃO DE TROCA DE TEMA (DARK MODE)
   display: none;
 }
 
+/* RODAPÉ */
+
+footer {
+  background-color: #418aa5;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  color: #fff;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
 /* 
 TEMA ESCURO (DARK MODE)
 Estilos aplicados quando o body recebe a classe "dark"
@@ -345,7 +362,7 @@ body.dark nav {
 /* área principal */
 body.dark main {
   background-image: linear-gradient(#2c2c2c, #1b1b1b);
-  color: white;
+  color: #fff;
 }
 
 /* seções internas */
@@ -389,5 +406,10 @@ body.dark .menu a.ativo {
 
 /* cabeçalho */
 body.dark header {
+  background-color: #1c3c4a;
+}
+
+/* rodapé */
+body.dark footer {
   background-color: #1c3c4a;
 }
